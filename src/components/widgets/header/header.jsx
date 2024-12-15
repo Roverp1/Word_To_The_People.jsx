@@ -1,4 +1,4 @@
-import githubLogo from "../../assets/img/header/github-logo.svg"
+import githubLogo from "../../../assets/img/header/github-logo.svg"
 
 import "./header.css";
 

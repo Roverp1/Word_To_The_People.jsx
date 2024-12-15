@@ -1,4 +1,4 @@
-import Header from './components/header/header'
+import Header from './components/widgets/header/header'
 
 import './App.css'
 
