@@ -1,0 +1,50 @@
+.search__section {
+  height: 62px;
+  background-color: #B4AF9C;
+  opacity: 0.8;
+  left: calc((100% - 100vw) / 2);
+  position: relative;
+  width: 100vw;
+}
+
+.search__wraper {
+  position: relative;
+  top: 5px;
+  transition: all .2s ease;
+  left: 100px;
+}
+
+.search__wraper:hover {
+  top: 3px;
+}
+
+.search__input {
+  border: 2px solid #000;
+  font-size: 25px;
+  padding: 2px 35px;
+  border-radius: 45px 3px;
+  position: absolute;
+  top: 5px;
+  min-width: 550px;
+  transition: all .2s ease;
+}
+
+.search__input:hover {
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, .3);
+}
+
+.search__span svg {
+  position: absolute;
+  transform: rotate(90deg);
+  scale: .77;
+  top: 0px;
+  left: 498px;
+}
+
+.search__span svg path {
+  transition: all .2s;
+}
+
+.search__span:hover svg path {
+  stroke: #612f00;
+}
