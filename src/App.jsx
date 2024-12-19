@@ -1,5 +1,6 @@
+import { Outlet } from 'react-router'
+
 import Header from './components/widgets/header/header'
-import Search from './components/widgets/search/search'
 
 import './App.css'
 
@@ -9,7 +10,7 @@ function App() {
     <>
       <div className='container'>
         <Header />
-        <Search />
+        <Outlet />
       </div>
     </>
   )
