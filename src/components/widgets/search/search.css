@@ -33,6 +33,10 @@
   box-shadow: 6px 6px 6px rgba(0, 0, 0, .3);
 }
 
+.search__input-hover {
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, .3);
+}
+
 .search__span svg {
   position: absolute;
   transform: rotate(90deg);
