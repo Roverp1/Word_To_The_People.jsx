@@ -37,7 +37,7 @@
   box-shadow: 6px 6px 6px rgba(0, 0, 0, .3);
 }
 
-.search__span svg {
+.search__icon svg {
   position: absolute;
   transform: rotate(90deg);
   scale: .77;
@@ -45,10 +45,10 @@
   left: 498px;
 }
 
-.search__span svg path {
+.search__icon svg path {
   transition: all .2s;
 }
 
-.search__span:hover svg path {
+.search__icon:hover svg path {
   stroke: #612f00;
 }
