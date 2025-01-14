@@ -15,8 +15,8 @@ ReactDOM.createRoot(root).render(
   <BrowserRouter>
     <Routes>
       <Route element={<App />} >
-        <Route path="/" element={<HomePage/>} />
-        <Route path="/word/" element={<WordPage/>} />
+        <Route index element={<HomePage />} />
+        <Route path="/word/:word" element={<WordPage />} />
       </Route>
     </Routes>
   </BrowserRouter>

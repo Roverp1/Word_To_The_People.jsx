@@ -12,7 +12,6 @@ const Search = () => {
     const trimedWord = word.trim();
     if (trimedWord) {
       navigate(`/word/${word.trim()}`);
-      console.log("Im here");
     }
   }
 
