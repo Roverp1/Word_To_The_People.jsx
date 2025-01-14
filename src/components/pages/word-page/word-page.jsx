@@ -1,13 +1,14 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Search from '../../widgets/search/search'
+import HeadingWordPage from '../../widgets/heading-word-page/heading-word-page.jsx'
 
 import './word-page.css'
 
 const WordPage = () => {
   const { word } = useParams();
   const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -15,7 +16,6 @@ const WordPage = () => {
       setLoading(true);
       try {
         const response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
-        // https://api.dictionaryapi.dev/api/v2/entries/en/<word>
         if (!response.ok) throw new Error("error");
         const result = await response.json();
         setData(result);
@@ -37,6 +37,7 @@ const WordPage = () => {
   return (
     <>
       <Search />
+      <HeadingWordPage data={data} />
     </>
   )
 }
