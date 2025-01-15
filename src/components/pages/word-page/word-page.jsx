@@ -1,5 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+
+import LoadingPage from '../loading-page/loading-page.jsx';
 import Search from '../../widgets/search/search'
 import HeadingWordPage from '../../widgets/heading-word-page/heading-word-page.jsx'
 
@@ -29,8 +31,9 @@ const WordPage = () => {
     fetchData();
   }, [word]);
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <ErrorPage />;
+  if (loading) return <LoadingPage />;
+  if (error) return <p>Error</p>;
+  //if (error) return <ErrorPage />;
   if (!data) return <p>No data available</p>;
 
 
