@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 import LoadingPage from '../loading-page/loading-page.jsx';
+import ErrorPage from '../error-page/error-page.jsx';
 import Search from '../../widgets/search/search'
 import HeadingWordPage from '../../widgets/heading-word-page/heading-word-page.jsx'
 
@@ -32,8 +33,7 @@ const WordPage = () => {
   }, [word]);
 
   if (loading) return <LoadingPage />;
-  if (error) return <p>Error</p>;
-  //if (error) return <ErrorPage />;
+  if (error) return <ErrorPage onRetry={() => setError(null)} />;
   if (!data) return <p>No data available</p>;
 
 

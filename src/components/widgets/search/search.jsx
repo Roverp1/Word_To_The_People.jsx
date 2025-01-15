@@ -1,10 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { Link } from 'react-router';
 
 import './search.css'
 
-const Search = () => {
+const Search = ({ onRetry }) => {
   const [word, setWord] = useState("");
   const navigate = useNavigate();
 
@@ -13,6 +12,7 @@ const Search = () => {
     if (trimedWord) {
       navigate(`/word/${word.trim()}`);
     }
+    if (onRetry) onRetry();
   }
 
   const handleEnterDown = (e) => {
