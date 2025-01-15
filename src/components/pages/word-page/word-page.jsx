@@ -37,7 +37,9 @@ const WordPage = () => {
   return (
     <>
       <Search />
-      <HeadingWordPage data={data} />
+      <div className='word-page__container'>
+        <HeadingWordPage data={data} />
+      </div>
     </>
   )
 }

@@ -1,1 +1,18 @@
+.heading-wp {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
 
+.heading-wp h1 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.heading-wp__list {
+  display: flex;
+}
+
+.heading-wp__item a img {
+  height: 47px;
+}
