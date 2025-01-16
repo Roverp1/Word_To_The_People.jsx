@@ -1,6 +1,9 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
+import LineBold from '../../ui/line-bold/line-bold.jsx';
+import PartOfSpeechSection from '../../widgets/part-of-speech-section/part-of-speech-section.jsx';
+import Line from '../../ui/line/line.jsx';
 import LoadingPage from '../loading-page/loading-page.jsx';
 import ErrorPage from '../error-page/error-page.jsx';
 import Search from '../../widgets/search/search'
@@ -42,6 +45,10 @@ const WordPage = () => {
       <Search />
       <div className='word-page__container'>
         <HeadingWordPage data={data} />
+        <Line />
+        <PartOfSpeechSection data={data} meanings={0} />
+        <LineBold />
+        <PartOfSpeechSection data={data} meanings={1} />
       </div>
     </>
   )
