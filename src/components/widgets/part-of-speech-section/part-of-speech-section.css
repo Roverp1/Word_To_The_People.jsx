@@ -1,3 +1,7 @@
 .part-of-speech__wrapper-container {
   margin: 0 5px;
 }
+
+.part-of-speech__audio-player {
+  display: flex;
+}

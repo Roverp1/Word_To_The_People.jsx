@@ -23,7 +23,7 @@ const AudioPlayer = ({ data }) => {
     return (
       <>
         <div className='audio-player__player'>
-          <h2 className='audio-player__player'>{countryFromAudioLink}</h2>
+          <h2 className='audio-player__player-heading'>{countryFromAudioLink}</h2>
           <button className='audio-player__player-btn' onClick={playAudio}>
             <img className='audio-player__player-icon' src={playIcon} alt="play icon" />
           </button>

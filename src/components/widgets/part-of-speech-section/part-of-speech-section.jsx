@@ -9,7 +9,7 @@ const PartOfSpeechSection = ({ data, meanings }) => {
         <div className='part-of-speech__wrapper-container'>
           <h1>{data[0].word}</h1>
           <span>{data[0]?.meanings[meanings]?.partOfSpeech}</span>
-          <AudioPlayer data={data} />
+          <div className='part-of-speech__audio-player'><AudioPlayer data={data} /></div>
         </div>
       </section>
     </>
