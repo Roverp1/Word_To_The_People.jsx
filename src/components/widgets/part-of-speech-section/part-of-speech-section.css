@@ -1,7 +1,20 @@
-.part-of-speech__wrapper-container {
+.pos__wrapper-container {
   margin: 0 5px;
+  font-size: 30px;
 }
 
-.part-of-speech__audio-player {
+.pos__word {
+  font-size: 50px;
+  line-height: 150%;
+  font-weight: 500;
+}
+
+.pos__part-of-speech {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.pos__audio-player {
   display: flex;
 }
