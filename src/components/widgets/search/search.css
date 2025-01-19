@@ -1,6 +1,6 @@
 .search__section {
   height: 62px;
-  background-color: #B4AF9C;
+  background-color: #b4af9c;
   opacity: 0.8;
   left: calc((100% - 100vw) / 2);
   position: relative;
@@ -10,7 +10,7 @@
 .search__wraper {
   position: relative;
   top: 5px;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
   left: 100px;
 }
 
@@ -26,27 +26,27 @@
   position: absolute;
   top: 5px;
   min-width: 550px;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
 .search__input:hover {
-  box-shadow: 6px 6px 6px rgba(0, 0, 0, .3);
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
 }
 
 .search__input-hover {
-  box-shadow: 6px 6px 6px rgba(0, 0, 0, .3);
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
 }
 
 .search__icon svg {
   position: absolute;
   transform: rotate(90deg);
-  scale: .77;
+  scale: 0.77;
   top: 0px;
   left: 498px;
 }
 
 .search__icon svg path {
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .search__icon:hover svg path {

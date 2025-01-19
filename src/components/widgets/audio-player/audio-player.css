@@ -14,11 +14,13 @@
   margin-right: 2px;
 }
 
-.audio-player__player-btn {}
+.audio-player__player-btn {
+}
 
 .audio-player__player-icon {
   height: 30px;
   margin-right: 12px;
 }
 
-.audio-player__player-phonetic {}
+.audio-player__player-phonetic {
+}

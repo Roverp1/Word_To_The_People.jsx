@@ -6,18 +6,17 @@ import App from "./App";
 import HomePage from "./components/pages/home-page/home-page";
 import WordPage from "./components/pages/word-page/word-page";
 
-import './main.css'
-
+import "./main.css";
 
 const root = document.getElementById("root");
 
 ReactDOM.createRoot(root).render(
   <BrowserRouter>
     <Routes>
-      <Route element={<App />} >
+      <Route element={<App />}>
         <Route index element={<HomePage />} />
         <Route path="/word/:word" element={<WordPage />} />
       </Route>
     </Routes>
-  </BrowserRouter>
+  </BrowserRouter>,
 );

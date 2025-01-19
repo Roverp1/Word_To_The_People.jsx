@@ -8,7 +8,7 @@ const LoadingPage = () => {
       <Search />
       <p>Loading...</p>
     </>
-  )
-}
+  );
+};
 
 export default LoadingPage;

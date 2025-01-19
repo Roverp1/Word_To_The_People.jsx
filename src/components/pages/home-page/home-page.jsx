@@ -1,13 +1,13 @@
-import Search from '../../widgets/search/search'
+import Search from "../../widgets/search/search";
 
-import './home-page.css'
+import "./home-page.css";
 
 const HomePage = () => {
   return (
-  <>
-    <Search /> 
-  </>
-  )
-}
+    <>
+      <Search />
+    </>
+  );
+};
 
-export default HomePage
+export default HomePage;

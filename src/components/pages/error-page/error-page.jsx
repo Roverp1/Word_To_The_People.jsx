@@ -1,6 +1,6 @@
-import Search from '../../widgets/search/search';
+import Search from "../../widgets/search/search";
 
-import './error-page.css';
+import "./error-page.css";
 
 const ErrorPage = ({ onRetry }) => {
   return (
@@ -8,7 +8,7 @@ const ErrorPage = ({ onRetry }) => {
       <Search onRetry={onRetry} />
       <p>Error</p>
     </>
-  )
-}
+  );
+};
 
 export default ErrorPage;
