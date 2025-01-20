@@ -22,23 +22,19 @@ const AudioPlayer = ({ data }) => {
     };
 
     return (
-      <>
-        <div key={index} className="audio-player__player">
-          <h2 className="audio-player__player-heading">
-            {countryFromAudioLink}
-          </h2>
-          <button className="audio-player__player-btn" onClick={playAudio}>
-            <img
-              className="audio-player__player-icon"
-              src={playIcon}
-              alt="play icon"
-            />
-          </button>
-          <span className="audio-player__player-phonetic">
-            {element.text || "/unknown/"}
-          </span>
-        </div>
-      </>
+      <div key={index} className="audio-player__player">
+        <h2 className="audio-player__player-heading">{countryFromAudioLink}</h2>
+        <button className="audio-player__player-btn" onClick={playAudio}>
+          <img
+            className="audio-player__player-icon"
+            src={playIcon}
+            alt="play icon"
+          />
+        </button>
+        <span className="audio-player__player-phonetic">
+          {element.text || "/unknown/"}
+        </span>
+      </div>
     );
   });
 };
