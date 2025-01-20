@@ -9,7 +9,7 @@ const AudioPlayer = ({ data }) => {
     return null;
   }
 
-  return phoneticsArr.map((element) => {
+  return phoneticsArr.map((element, index) => {
     const audioLink = element.audio || "";
     const countryFromAudioLink =
       audioLink.match(/-(ca|uk|us|au)/)?.[1].toUpperCase() || "UNKNOWN";
@@ -23,7 +23,7 @@ const AudioPlayer = ({ data }) => {
 
     return (
       <>
-        <div className="audio-player__player">
+        <div key={index} className="audio-player__player">
           <h2 className="audio-player__player-heading">
             {countryFromAudioLink}
           </h2>

@@ -1,4 +1,5 @@
 import AudioPlayer from "../audio-player/audio-player";
+import WordDefenition from "../word-defenition/word-defenition";
 
 import "./part-of-speech-section.css";
 
@@ -16,6 +17,7 @@ const PartOfSpeechSection = ({ data, meanings }) => {
               <div className="pos__audio-player">
                 <AudioPlayer data={data} />
               </div>
+              <WordDefenition data={data} meaning={meanings} />
             </div>
           </section>
         </>
