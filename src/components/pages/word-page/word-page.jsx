@@ -48,7 +48,6 @@ const WordPage = () => {
         <HeadingWordPage data={data} />
         <Line />
         <PartOfSpeechSection data={data} meanings={0} />
-        <LineBold />
         <PartOfSpeechSection data={data} meanings={1} />
       </div>
     </>
