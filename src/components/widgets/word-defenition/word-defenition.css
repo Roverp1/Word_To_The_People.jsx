@@ -1,0 +1,24 @@
+.definition-item {
+}
+
+.definition-item__definition {
+}
+
+.definition-item__definition h2 {
+  font-size: 25px;
+}
+
+.definition-item__definition p {
+  font-size: 27px;
+  line-height: 1.2;
+  text-indent: 30px;
+  text-align: justify;
+}
+
+.definition-item__example {
+  font-style: italic;
+  font-size: 25px;
+  margin: 24px 0 0 50px;
+  display: flex;
+  align-items: center;
+}
