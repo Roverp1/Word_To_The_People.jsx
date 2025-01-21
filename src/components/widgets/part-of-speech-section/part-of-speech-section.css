@@ -1,5 +1,6 @@
 .pos__wrapper-container {
-  margin: 0 5px 80px 5px;
+  margin: 0 5px;
+  padding-bottom: 70px;
   font-size: 30px;
 }
 

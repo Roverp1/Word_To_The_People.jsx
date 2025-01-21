@@ -47,8 +47,7 @@ const WordPage = () => {
       <div className="word-page__container">
         <HeadingWordPage data={data} />
         <Line />
-        <PartOfSpeechSection data={data} meanings={0} />
-        <PartOfSpeechSection data={data} meanings={1} />
+        <PartOfSpeechSection data={data} />
       </div>
     </>
   );
