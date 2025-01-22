@@ -1,11 +1,15 @@
+import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
-import "./search.css";
+import searchCss from "./search.module.css";
+import searchCenterCss from "./search-center.module.css";
 
-const Search = ({ onRetry }) => {
+const Search = ({ onRetry, display }) => {
   const [word, setWord] = useState("");
   const navigate = useNavigate();
+
+  const style = display === "center" ? searchCenterCss : searchCss;
 
   const handleSearch = () => {
     const trimedWord = word.trim();
@@ -21,29 +25,30 @@ const Search = ({ onRetry }) => {
     }
   };
 
+  const searchInputRef = useRef();
+
   const handleMouseOver = () => {
-    const searchInput = document.querySelector(".search__input");
-    searchInput.classList.add("search__input-hover");
+    searchInputRef.current.classList.add("search__input-hover");
   };
 
   const handleMouseOut = () => {
-    const searchInput = document.querySelector(".search__input");
-    searchInput.classList.remove("search__input-hover");
+    searchInputRef.current.classList.remove("search__input-hover");
   };
 
   return (
     <>
-      <section className="search search__section">
-        <div className="search__wraper container">
+      <section className={style["search__section"]}>
+        <div className={`${style["search__wraper"]} ${style["container"]}`}>
           <input
             type="text"
             value={word}
             onKeyDown={handleEnterDown}
             onChange={(e) => setWord(e.target.value)}
-            className="search__input"
+            className={style["search__input"]}
+            ref={searchInputRef}
             placeholder="Search"
           />
-          <button className="search__icon" onClick={handleSearch}>
+          <button className={style["search__icon"]} onClick={handleSearch}>
             <svg
               id="search-id"
               onMouseOver={handleMouseOver}
@@ -57,7 +62,7 @@ const Search = ({ onRetry }) => {
             >
               {" "}
               <path
-                fill="none"
+                fill="nsearchCss"
                 stroke="#000"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -66,7 +71,7 @@ const Search = ({ onRetry }) => {
                 d="M32.4,26.2l8.1,8.1c1.7,1.7,1.7,4.5,0,6.2l0,0c-1.7,1.7-4.5,1.7-6.2,0L30,36.2"
               ></path>{" "}
               <path
-                fill="none"
+                fill="nsearchCss"
                 stroke="#000"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -75,19 +80,20 @@ const Search = ({ onRetry }) => {
                 d="M8,25c-1.8-4.7-0.8-10.2,3-14c3.8-3.8,9.5-4.8,14.2-2.9"
               ></path>{" "}
               <path
-                fill="none"
+                fill="nsearchCss"
                 stroke="#000"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeMiterlimit="10"
                 strokeWidth="3"
                 d="M31.3,13.1c3.4,5.1,2.8,12.1-1.7,16.6c-4.9,4.9-12.6,5.1-17.7,0.8"
-              ></path>{" "}
-            </svg>{" "}
-          </button>{" "}
-        </div>{" "}
-      </section>{" "}
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </section>
     </>
   );
 };
+
 export default Search;

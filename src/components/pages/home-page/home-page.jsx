@@ -5,7 +5,7 @@ import "./home-page.css";
 const HomePage = () => {
   return (
     <>
-      <Search />
+      <Search display={"center"} />
     </>
   );
 };
