@@ -60,27 +60,26 @@ const Search = ({ onRetry, display }) => {
               height="50"
               viewBox="0 0 48 48"
             >
-              {" "}
               <path
-                fill="nsearchCss"
+                fill=" #fff"
                 stroke="#000"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeMiterlimit="10"
                 strokeWidth="3"
                 d="M32.4,26.2l8.1,8.1c1.7,1.7,1.7,4.5,0,6.2l0,0c-1.7,1.7-4.5,1.7-6.2,0L30,36.2"
-              ></path>{" "}
+              ></path>
               <path
-                fill="nsearchCss"
+                fill=" #fff"
                 stroke="#000"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeMiterlimit="10"
                 strokeWidth="3"
                 d="M8,25c-1.8-4.7-0.8-10.2,3-14c3.8-3.8,9.5-4.8,14.2-2.9"
-              ></path>{" "}
+              ></path>
               <path
-                fill="nsearchCss"
+                fill=" #fff"
                 stroke="#000"
                 strokeLinecap="round"
                 strokeLinejoin="round"
