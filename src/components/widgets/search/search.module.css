@@ -14,6 +14,10 @@
   top: 5px;
   transition: all 0.2s ease;
   left: 100px;
+
+  @media (max-width: 700px) {
+    left: 0px;
+  }
 }
 
 .search__wraper:hover {
@@ -29,6 +33,15 @@
   top: 5px;
   min-width: 550px;
   transition: all 0.2s ease;
+
+  @media (max-width: 600px) {
+    min-width: 350px;
+  }
+
+  @media (max-width: 430px) {
+    min-width: 285px;
+    max-width: 1px;
+  }
 }
 
 .search__input:hover {
@@ -45,6 +58,14 @@
   scale: 0.77;
   top: 0px;
   left: 498px;
+
+  @media (max-width: 600px) {
+    left: 348px;
+  }
+
+  @media (max-width: 430px) {
+    left: 245px;
+  }
 }
 
 .search__icon svg path {
